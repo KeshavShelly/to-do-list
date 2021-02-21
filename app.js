@@ -5,6 +5,12 @@ const todoButton = document.querySelector(".todo-button");
 const todoList = document.querySelector('.todo-list');
 const filterOption = document.querySelector('.filter-todo');
 
+window.addEventListener('load', (event) => {
+    var name = prompt("Enter your name to create to do List :") 
+    var element = document.getElementById("to_do_list");
+    element.innerHTML = `${name}'s to do list`;
+});
+
 //Event Listeners
 
 todoButton.addEventListener('click', addTodo)
